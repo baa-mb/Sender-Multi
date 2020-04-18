@@ -1,5 +1,5 @@
 {
-    "name": "sender",
+    "name": "sender01",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -16,5 +16,16 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_NO_MITM"
+                }
+            }
+        }
+    }
 }
